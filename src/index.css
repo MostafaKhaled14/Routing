@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.bg-m-color {
+  background-color: #1abc9c;
+}
+.te-m-color {
+  color: #1abc9c;
+}
+.bg-s-color {
+  background-color: #2c3e50;
+}
+.te-s-color {
+  color: #2c3e50;
+}
+.bg-th-color {
+  background-color: #1a252f;
+}
+.te-th-color {
+  color: #1a252f;
+}
+
+.collapse {
+  visibility: visible;
+}
+
+.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 0.875rem;
+  background-color: white;
+  transition: 0.2s;
+  &:hover {
+    background-color: #1abc9c;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.navbar-toggler:hover span {
+  background-color: white;
+}
+
+.navbar-toggler span {
+  background-color: #1abc9c;
+  width: 1.375rem;
+  height: 0.125rem;
+}
+
+.navbar-toggler span:not(:first-child) {
+  margin-top: 0.4375rem;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #1abc9c;
+}
+
+@media (max-width: 768px) {
+  .nested .w-50 {
+    width: 100% !important;
+  }
+}
+
+.nested label {
+  position: relative;
+  top: 40px;
+  color: #1abc9c;
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.nested input {
+  outline: none;
+  overflow: hidden;
+  &::placeholder {
+    color: #2c3e50;
+  }
+}
+
+.my-top-0 {
+  top: 5px !important;
+}
+
+.position-relative .position-absolute {
+  opacity: 0;
+  transition: 0.4s;
+  &:hover {
+    background-color: rgba(26, 188, 156, 0.8);
+    opacity: 1;
+  }
+}
+
+.layer {
+  transform: translate(-50%, -50%);
+}
+
+.layer-color {
+  background-color: rgb(13, 110, 253, 0.25);
+}
+
+.close {
+  font-family: "Righteous", cursive;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 280px) {
+  .text-uppercase {
+    padding: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .navbar-brand {
+    font-size: 18px !important;
+    margin-left: 5px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .my-width {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 768px) {
+  .my-fixed-width {
+    width: 50% !important;
+    height: 50% !important;
+  }
+}
